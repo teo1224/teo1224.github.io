@@ -1,43 +1,561 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-  <title>Band Website</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Teo - Curated Interior Design</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-  <header>
-      <h1> "<i>Almost Bruno</i>" Band </h1>
-  </header>
-<meta charset="utf-8">
 <body>
-  <h1>About Us</h1>
-  <p>We are the "Almost Bruno" Band. We all really wanted to play with or sing with Bruno Mars... but none of us were good enough so HERE WE ARE! We hope you enjoy our "almost" good performances featuring our "almost" Bruno - David Kim a.k.a. Almost Bruno, our guitar player Giacomo, and finally our newest addition our "almost" Anderson .Paak Taeun Kim.
-  <b>Here's "I Just Might" by Bruno Mars (cause he's much better than us)</b>
-  </p>
-  
-  <p>
-  <audio src="IJustMight.mp3" controls>
-  </p>
-<h1>The Band</h1>
-<img src="Bruno Mars Band.png" alt="The Band">
-
-	<h3>David Kim a.k.a. Almost Bruno</h3>
-	<p>David loves singing. Also he love Bruno Mars. He always wanted to be a background vocal in Bruno's band. He sent short video to Bruno Mars every time when he singing. Sadly Bruno was too busy to check his video. So David decided to gather a "Almost Bruno Band"...
-</p>
-    <h3>Meet Giacomo Messina</h3>
-    <p>Since the first time Bruno Mars touched the stage Giacomo knew that he wanted to be a part of his band... sadly that dream was ruined when he was not hired for his tours. Instead of being too upset about it he instead chose to join the "Almost Bruno Band" spending his days practicing and impersonating everything about the music. (He secretly hopes to truly make it to Bruno's band one day but this gig is close enough I guess...)</p>
-
-    <h3>Meet Taeun Kim "Almost Anderson .Paak"</h3>
-    <p>Since he was young, Taeun spent most of his time playing drums and singing, Unfortunately, despite all the hours of practice, his skills never quite caught up with his ambition, and he somehow earned the nickname “almost Anderson .Paak.” Realizing that joining Bruno Mars’ actual band was probably out of reach, he decided to aim a little lower and joined the “Almost Bruno Band” instead. He does not like it.</p>
-
-    <h3>Meet Nick</h3>
-    <p>I've wanted to be a member of the Bruno Mars Band all my life and I almost was. I should have been the drummer for bruno mars, and would have.  I was supposed to be anderson paak however, on the day of the audition, we met and got into a discussion over the correct snare tone. Obviously this turned into an "altercation", and I am unjustly banned from UMG premicises now. Unfortunately almost doesn't cut it. After getting out of prison, I joined "Almost Bruno." And that's where I am Today. 
-</p>
-
-      <h3>Reviews</h3>
-      <p>"Wow this band really is... almost Bruno?"</p>
-      <p>"I guess someone else needed to get out of their gambling debt"</p>
-      <p>"I bought my tickets to Almost Bruno through Facebook Marketplace under the assumption that these were... real? Bruno Tickets. They were not real. They definetly are a... band?"</p>
-      <p id="endBlock">"Honestly, I kinda liked this band more. This comment is definetly not sponsored"</p>
-
+<!-- Home Page -->
+<div class="page active" id="home-page">
+<!-- Hero Section -->
+<div class="hero-section">
+<div class="container">
+<div class="logo-section">
+<h1 class="main-logo">Le Teo</h1>
+<div class="multilingual-subtitle">
+<p>interior</p>
+<p>intérieur</p>
+<p>interni</p>
+<p>interieur</p>
+<p>interiorismo</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<nav class="main-nav sticky">
+<div class="container">
+<ul class="nav-list">
+<li class="nav-item has-dropdown">
+<button class="nav-link">PRODUCT</button>
+<div class="dropdown product-dropdown">
+<div class="dropdown-content">
+<div class="dropdown-section">
+<h3>Furniture</h3>
+<ul>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Chair" href="#">Chair</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Table" href="#">Table</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Sofa" href="#">Sofa</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Bed" href="#">Bed</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Storage" href="#">Storage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Lighting</h3>
+<ul>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Pendant" href="#">Pendant</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Floor Lamp" href="#">Floor Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Table Lamp" href="#">Table Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Wall Sconce" href="#">Wall Sconce</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Decor</h3>
+<ul>
+<li><a data-category="Decor" data-page="product" data-subcategory="Vase" href="#">Vase</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Mirror" href="#">Mirror</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Textile" href="#">Textile</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Artwork" href="#">Artwork</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">BRAND</button>
+<div class="dropdown brand-dropdown">
+<div class="dropdown-content">
+<h3>Featured Brands</h3>
+<div class="brand-grid">
+<a data-brand="Cassina" data-page="brand" href="#">Cassina <span class="country">Italy</span></a>
+<a data-brand="Vitra" data-page="brand" href="#">Vitra <span class="country">Switzerland</span></a>
+<a data-brand="Fritz Hansen" data-page="brand" href="#">Fritz Hansen <span class="country">Denmark</span></a>
+<a data-brand="HAY" data-page="brand" href="#">HAY <span class="country">Denmark</span></a>
+<a data-brand="Kartell" data-page="brand" href="#">Kartell <span class="country">Italy</span></a>
+<a data-brand="Flos" data-page="brand" href="#">Flos <span class="country">Italy</span></a>
+<a data-brand="Ligne Roset" data-page="brand" href="#">Ligne Roset <span class="country">France</span></a>
+<a data-brand="Muuto" data-page="brand" href="#">Muuto <span class="country">Denmark</span></a>
+<a data-brand="Artek" data-page="brand" href="#">Artek <span class="country">Finland</span></a>
+<a data-brand="Knoll" data-page="brand" href="#">Knoll <span class="country">USA</span></a>
+<a data-brand="B&amp;B Italia" data-page="brand" href="#">B&amp;B Italia <span class="country">Italy</span></a>
+<a data-brand="Artemide" data-page="brand" href="#">Artemide <span class="country">Italy</span></a>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">REFERENCE</button>
+<div class="dropdown reference-dropdown">
+<div class="dropdown-content reference-grid">
+<div class="dropdown-section">
+<h3>Classical</h3>
+<ul>
+<li><a data-page="reference" data-style="Classical" href="#">Classical</a></li>
+<li><a data-page="reference" data-style="Art Nouveau" href="#">Art Nouveau</a></li>
+<li><a data-page="reference" data-style="Art Deco" href="#">Art Deco</a></li>
+<li><a data-page="reference" data-style="Victorian" href="#">Victorian</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Contemporary</h3>
+<ul>
+<li><a data-page="reference" data-style="Modern" href="#">Modern</a></li>
+<li><a data-page="reference" data-style="Mid-Century Modern" href="#">Mid-Century Modern</a></li>
+<li><a data-page="reference" data-style="Minimal" href="#">Minimal</a></li>
+<li><a data-page="reference" data-style="Bauhaus" href="#">Bauhaus</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Warm</h3>
+<ul>
+<li><a data-page="reference" data-style="Scandinavian" href="#">Scandinavian</a></li>
+<li><a data-page="reference" data-style="Natural" href="#">Natural</a></li>
+<li><a data-page="reference" data-style="Rustic" href="#">Rustic</a></li>
+<li><a data-page="reference" data-style="Vintage" href="#">Vintage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Conceptual</h3>
+<ul>
+<li><a data-page="reference" data-style="Industrial" href="#">Industrial</a></li>
+<li><a data-page="reference" data-style="Newtro" href="#">Newtro</a></li>
+<li><a data-page="reference" data-style="Bohemian" href="#">Bohemian</a></li>
+<li><a data-page="reference" data-style="Japandi" href="#">Japandi</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><button class="nav-link">STORE</button></li>
+<li class="nav-item"><button class="nav-link">PANTONE</button></li>
+<li class="nav-item"><button class="nav-link">OTHER SITE</button></li>
+</ul>
+</div>
+</nav>
+<!-- Home Content -->
+<div class="home-content">
+<div class="container">
+<div class="home-grid">
+<div class="home-text">
+<h2 class="home-title">Curated Interior Design</h2>
+<p class="home-description">Discover a refined collection of furniture, lighting, and décor from Europe's most prestigious design houses.</p>
+</div>
+<div class="home-image"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Listing Page -->
+<div class="page" id="product-page">
+<div class="page-header">
+<div class="container">
+<button class="logo-link" data-page="home">Le Teo</button>
+</div>
+</div>
+<!-- Navigation (repeated for consistency) -->
+<nav class="main-nav sticky">
+<div class="container">
+<ul class="nav-list">
+<li class="nav-item has-dropdown">
+<button class="nav-link">PRODUCT</button>
+<div class="dropdown product-dropdown">
+<div class="dropdown-content">
+<div class="dropdown-section">
+<h3>Furniture</h3>
+<ul>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Chair" href="#">Chair</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Table" href="#">Table</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Sofa" href="#">Sofa</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Bed" href="#">Bed</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Storage" href="#">Storage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Lighting</h3>
+<ul>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Pendant" href="#">Pendant</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Floor Lamp" href="#">Floor Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Table Lamp" href="#">Table Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Wall Sconce" href="#">Wall Sconce</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Decor</h3>
+<ul>
+<li><a data-category="Decor" data-page="product" data-subcategory="Vase" href="#">Vase</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Mirror" href="#">Mirror</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Textile" href="#">Textile</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Artwork" href="#">Artwork</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">BRAND</button>
+<div class="dropdown brand-dropdown">
+<div class="dropdown-content">
+<h3>Featured Brands</h3>
+<div class="brand-grid">
+<a data-brand="Cassina" data-page="brand" href="#">Cassina <span class="country">Italy</span></a>
+<a data-brand="Vitra" data-page="brand" href="#">Vitra <span class="country">Switzerland</span></a>
+<a data-brand="Fritz Hansen" data-page="brand" href="#">Fritz Hansen <span class="country">Denmark</span></a>
+<a data-brand="HAY" data-page="brand" href="#">HAY <span class="country">Denmark</span></a>
+<a data-brand="Kartell" data-page="brand" href="#">Kartell <span class="country">Italy</span></a>
+<a data-brand="Flos" data-page="brand" href="#">Flos <span class="country">Italy</span></a>
+<a data-brand="Ligne Roset" data-page="brand" href="#">Ligne Roset <span class="country">France</span></a>
+<a data-brand="Muuto" data-page="brand" href="#">Muuto <span class="country">Denmark</span></a>
+<a data-brand="Artek" data-page="brand" href="#">Artek <span class="country">Finland</span></a>
+<a data-brand="Knoll" data-page="brand" href="#">Knoll <span class="country">USA</span></a>
+<a data-brand="B&amp;B Italia" data-page="brand" href="#">B&amp;B Italia <span class="country">Italy</span></a>
+<a data-brand="Artemide" data-page="brand" href="#">Artemide <span class="country">Italy</span></a>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">REFERENCE</button>
+<div class="dropdown reference-dropdown">
+<div class="dropdown-content reference-grid">
+<div class="dropdown-section">
+<h3>Classical</h3>
+<ul>
+<li><a data-page="reference" data-style="Classical" href="#">Classical</a></li>
+<li><a data-page="reference" data-style="Art Nouveau" href="#">Art Nouveau</a></li>
+<li><a data-page="reference" data-style="Art Deco" href="#">Art Deco</a></li>
+<li><a data-page="reference" data-style="Victorian" href="#">Victorian</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Contemporary</h3>
+<ul>
+<li><a data-page="reference" data-style="Modern" href="#">Modern</a></li>
+<li><a data-page="reference" data-style="Mid-Century Modern" href="#">Mid-Century Modern</a></li>
+<li><a data-page="reference" data-style="Minimal" href="#">Minimal</a></li>
+<li><a data-page="reference" data-style="Bauhaus" href="#">Bauhaus</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Warm</h3>
+<ul>
+<li><a data-page="reference" data-style="Scandinavian" href="#">Scandinavian</a></li>
+<li><a data-page="reference" data-style="Natural" href="#">Natural</a></li>
+<li><a data-page="reference" data-style="Rustic" href="#">Rustic</a></li>
+<li><a data-page="reference" data-style="Vintage" href="#">Vintage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Conceptual</h3>
+<ul>
+<li><a data-page="reference" data-style="Industrial" href="#">Industrial</a></li>
+<li><a data-page="reference" data-style="Newtro" href="#">Newtro</a></li>
+<li><a data-page="reference" data-style="Bohemian" href="#">Bohemian</a></li>
+<li><a data-page="reference" data-style="Japandi" href="#">Japandi</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><button class="nav-link">STORE</button></li>
+<li class="nav-item"><button class="nav-link">PANTONE</button></li>
+<li class="nav-item"><button class="nav-link">OTHER SITE</button></li>
+</ul>
+</div>
+</nav>
+<div class="product-listing">
+<div class="container">
+<div class="listing-layout">
+<!-- Filter Sidebar -->
+<aside class="filter-sidebar">
+<div class="filter-section">
+<input class="search-input" id="search-input" placeholder="Search products..." type="text"/>
+</div>
+<div class="filter-section">
+<h3 class="filter-title">COLOR</h3>
+<div class="color-filters" id="color-filters">
+<button class="color-btn active" data-color="All" style="background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff); border: 2px solid #000;">
+<span class="color-label">All</span>
+</button>
+<button class="color-btn" data-color="Black" style="background-color: #000000;"></button>
+<button class="color-btn" data-color="White" style="background-color: #ffffff; border: 1px solid #e0e0e0;"></button>
+<button class="color-btn" data-color="Gray" style="background-color: #808080;"></button>
+<button class="color-btn" data-color="Beige" style="background-color: #d4c4b0;"></button>
+<button class="color-btn" data-color="Brown" style="background-color: #5c4033;"></button>
+<button class="color-btn" data-color="Blue" style="background-color: #2c5f8d;"></button>
+<button class="color-btn" data-color="Green" style="background-color: #4a7856;"></button>
+</div>
+</div>
+<div class="filter-section">
+<h3 class="filter-title">PRICE RANGE</h3>
+<div class="price-range">
+<input id="price-slider" max="10000" min="0" step="100" type="range" value="10000"/>
+<div class="price-labels">
+<span>$0</span>
+<span id="max-price">$10,000+</span>
+</div>
+</div>
+</div>
+<button class="reset-filters" id="reset-filters">Reset Filters</button>
+</aside>
+<!-- Product Grid -->
+<main class="product-main">
+<div class="product-header">
+<h1 class="category-title" id="category-title">Chair</h1>
+<p class="product-count" id="product-count">Loading...</p>
+</div>
+<div class="product-grid" id="product-grid">
+<!-- Products will be inserted here by JavaScript -->
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<!-- Brand Page -->
+<div class="page" id="brand-page">
+<div class="page-header">
+<div class="container">
+<button class="logo-link" data-page="home">Le Teo</button>
+</div>
+</div>
+<!-- Navigation (repeated) -->
+<nav class="main-nav sticky">
+<div class="container">
+<ul class="nav-list">
+<li class="nav-item has-dropdown">
+<button class="nav-link">PRODUCT</button>
+<div class="dropdown product-dropdown">
+<div class="dropdown-content">
+<div class="dropdown-section">
+<h3>Furniture</h3>
+<ul>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Chair" href="#">Chair</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Table" href="#">Table</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Sofa" href="#">Sofa</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Bed" href="#">Bed</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Storage" href="#">Storage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Lighting</h3>
+<ul>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Pendant" href="#">Pendant</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Floor Lamp" href="#">Floor Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Table Lamp" href="#">Table Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Wall Sconce" href="#">Wall Sconce</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Decor</h3>
+<ul>
+<li><a data-category="Decor" data-page="product" data-subcategory="Vase" href="#">Vase</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Mirror" href="#">Mirror</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Textile" href="#">Textile</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Artwork" href="#">Artwork</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">BRAND</button>
+<div class="dropdown brand-dropdown">
+<div class="dropdown-content">
+<h3>Featured Brands</h3>
+<div class="brand-grid">
+<a data-brand="Cassina" data-page="brand" href="#">Cassina <span class="country">Italy</span></a>
+<a data-brand="Vitra" data-page="brand" href="#">Vitra <span class="country">Switzerland</span></a>
+<a data-brand="Fritz Hansen" data-page="brand" href="#">Fritz Hansen <span class="country">Denmark</span></a>
+<a data-brand="HAY" data-page="brand" href="#">HAY <span class="country">Denmark</span></a>
+<a data-brand="Kartell" data-page="brand" href="#">Kartell <span class="country">Italy</span></a>
+<a data-brand="Flos" data-page="brand" href="#">Flos <span class="country">Italy</span></a>
+<a data-brand="Ligne Roset" data-page="brand" href="#">Ligne Roset <span class="country">France</span></a>
+<a data-brand="Muuto" data-page="brand" href="#">Muuto <span class="country">Denmark</span></a>
+<a data-brand="Artek" data-page="brand" href="#">Artek <span class="country">Finland</span></a>
+<a data-brand="Knoll" data-page="brand" href="#">Knoll <span class="country">USA</span></a>
+<a data-brand="B&amp;B Italia" data-page="brand" href="#">B&amp;B Italia <span class="country">Italy</span></a>
+<a data-brand="Artemide" data-page="brand" href="#">Artemide <span class="country">Italy</span></a>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">REFERENCE</button>
+<div class="dropdown reference-dropdown">
+<div class="dropdown-content reference-grid">
+<div class="dropdown-section">
+<h3>Classical</h3>
+<ul>
+<li><a data-page="reference" data-style="Classical" href="#">Classical</a></li>
+<li><a data-page="reference" data-style="Art Nouveau" href="#">Art Nouveau</a></li>
+<li><a data-page="reference" data-style="Art Deco" href="#">Art Deco</a></li>
+<li><a data-page="reference" data-style="Victorian" href="#">Victorian</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Contemporary</h3>
+<ul>
+<li><a data-page="reference" data-style="Modern" href="#">Modern</a></li>
+<li><a data-page="reference" data-style="Mid-Century Modern" href="#">Mid-Century Modern</a></li>
+<li><a data-page="reference" data-style="Minimal" href="#">Minimal</a></li>
+<li><a data-page="reference" data-style="Bauhaus" href="#">Bauhaus</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Warm</h3>
+<ul>
+<li><a data-page="reference" data-style="Scandinavian" href="#">Scandinavian</a></li>
+<li><a data-page="reference" data-style="Natural" href="#">Natural</a></li>
+<li><a data-page="reference" data-style="Rustic" href="#">Rustic</a></li>
+<li><a data-page="reference" data-style="Vintage" href="#">Vintage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Conceptual</h3>
+<ul>
+<li><a data-page="reference" data-style="Industrial" href="#">Industrial</a></li>
+<li><a data-page="reference" data-style="Newtro" href="#">Newtro</a></li>
+<li><a data-page="reference" data-style="Bohemian" href="#">Bohemian</a></li>
+<li><a data-page="reference" data-style="Japandi" href="#">Japandi</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><button class="nav-link">STORE</button></li>
+<li class="nav-item"><button class="nav-link">PANTONE</button></li>
+<li class="nav-item"><button class="nav-link">OTHER SITE</button></li>
+</ul>
+</div>
+</nav>
+<div class="brand-content" id="brand-content">
+<!-- Brand content will be inserted here -->
+</div>
+</div>
+<!-- Reference Page -->
+<div class="page" id="reference-page">
+<div class="page-header">
+<div class="container">
+<button class="logo-link" data-page="home">Le Teo</button>
+</div>
+</div>
+<!-- Navigation (repeated) -->
+<nav class="main-nav sticky">
+<div class="container">
+<ul class="nav-list">
+<li class="nav-item has-dropdown">
+<button class="nav-link">PRODUCT</button>
+<div class="dropdown product-dropdown">
+<div class="dropdown-content">
+<div class="dropdown-section">
+<h3>Furniture</h3>
+<ul>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Chair" href="#">Chair</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Table" href="#">Table</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Sofa" href="#">Sofa</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Bed" href="#">Bed</a></li>
+<li><a data-category="Furniture" data-page="product" data-subcategory="Storage" href="#">Storage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Lighting</h3>
+<ul>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Pendant" href="#">Pendant</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Floor Lamp" href="#">Floor Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Table Lamp" href="#">Table Lamp</a></li>
+<li><a data-category="Lighting" data-page="product" data-subcategory="Wall Sconce" href="#">Wall Sconce</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Decor</h3>
+<ul>
+<li><a data-category="Decor" data-page="product" data-subcategory="Vase" href="#">Vase</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Mirror" href="#">Mirror</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Textile" href="#">Textile</a></li>
+<li><a data-category="Decor" data-page="product" data-subcategory="Artwork" href="#">Artwork</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">BRAND</button>
+<div class="dropdown brand-dropdown">
+<div class="dropdown-content">
+<h3>Featured Brands</h3>
+<div class="brand-grid">
+<a data-brand="Cassina" data-page="brand" href="#">Cassina <span class="country">Italy</span></a>
+<a data-brand="Vitra" data-page="brand" href="#">Vitra <span class="country">Switzerland</span></a>
+<a data-brand="Fritz Hansen" data-page="brand" href="#">Fritz Hansen <span class="country">Denmark</span></a>
+<a data-brand="HAY" data-page="brand" href="#">HAY <span class="country">Denmark</span></a>
+<a data-brand="Kartell" data-page="brand" href="#">Kartell <span class="country">Italy</span></a>
+<a data-brand="Flos" data-page="brand" href="#">Flos <span class="country">Italy</span></a>
+<a data-brand="Ligne Roset" data-page="brand" href="#">Ligne Roset <span class="country">France</span></a>
+<a data-brand="Muuto" data-page="brand" href="#">Muuto <span class="country">Denmark</span></a>
+<a data-brand="Artek" data-page="brand" href="#">Artek <span class="country">Finland</span></a>
+<a data-brand="Knoll" data-page="brand" href="#">Knoll <span class="country">USA</span></a>
+<a data-brand="B&amp;B Italia" data-page="brand" href="#">B&amp;B Italia <span class="country">Italy</span></a>
+<a data-brand="Artemide" data-page="brand" href="#">Artemide <span class="country">Italy</span></a>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item has-dropdown">
+<button class="nav-link">REFERENCE</button>
+<div class="dropdown reference-dropdown">
+<div class="dropdown-content reference-grid">
+<div class="dropdown-section">
+<h3>Classical</h3>
+<ul>
+<li><a data-page="reference" data-style="Classical" href="#">Classical</a></li>
+<li><a data-page="reference" data-style="Art Nouveau" href="#">Art Nouveau</a></li>
+<li><a data-page="reference" data-style="Art Deco" href="#">Art Deco</a></li>
+<li><a data-page="reference" data-style="Victorian" href="#">Victorian</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Contemporary</h3>
+<ul>
+<li><a data-page="reference" data-style="Modern" href="#">Modern</a></li>
+<li><a data-page="reference" data-style="Mid-Century Modern" href="#">Mid-Century Modern</a></li>
+<li><a data-page="reference" data-style="Minimal" href="#">Minimal</a></li>
+<li><a data-page="reference" data-style="Bauhaus" href="#">Bauhaus</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Warm</h3>
+<ul>
+<li><a data-page="reference" data-style="Scandinavian" href="#">Scandinavian</a></li>
+<li><a data-page="reference" data-style="Natural" href="#">Natural</a></li>
+<li><a data-page="reference" data-style="Rustic" href="#">Rustic</a></li>
+<li><a data-page="reference" data-style="Vintage" href="#">Vintage</a></li>
+</ul>
+</div>
+<div class="dropdown-section">
+<h3>Conceptual</h3>
+<ul>
+<li><a data-page="reference" data-style="Industrial" href="#">Industrial</a></li>
+<li><a data-page="reference" data-style="Newtro" href="#">Newtro</a></li>
+<li><a data-page="reference" data-style="Bohemian" href="#">Bohemian</a></li>
+<li><a data-page="reference" data-style="Japandi" href="#">Japandi</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-item"><button class="nav-link">STORE</button></li>
+<li class="nav-item"><button class="nav-link">PANTONE</button></li>
+<li class="nav-item"><button class="nav-link">OTHER SITE</button></li>
+</ul>
+</div>
+</nav>
+<div class="reference-content" id="reference-content">
+<!-- Reference content will be inserted here -->
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
