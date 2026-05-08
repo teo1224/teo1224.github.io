@@ -1,10 +1,10 @@
-### Le Teo Website Development Process
-This project focused on building a minimal European luxury interior design website called 'Le Teo'. During the process, I collaborated with AI tools to discuss layout direction, navigation systems, interaction design, and overall website structure. Instead of pretending that I fully knew every part of the coding process from the beginning, I used AI as a creative and technical assistant while learning how HTML, CSS, and JavaScript work together to create a complete interactive website.
-1. Initial Website Concept
-At the beginning of the project, I focused on establishing the visual identity and emotional tone of the website. I wanted the design to feel modern, architectural, quiet, and editorial rather than looking like a typical ecommerce site. I discussed ideas such as Scandinavian minimalism, modern European interiors, luxury typography, and soft neutral tones with AI to shape the direction of the website.
+# Le Teo Website Development Process
+ This project focused on building a minimal European luxury interior design website called 'Le Teo'. During the process, I collaborated with AI tools to discuss layout direction, navigation systems, interaction design, and overall website structure. Instead of pretending that I fully knew every part of the coding process from the beginning, I used AI as a creative and technical assistant while learning how HTML, CSS, and JavaScript work together to create a complete interactive website.
+### 1. Initial Website Concept
+- At the beginning of the project, I focused on establishing the visual identity and emotional tone of the website. I wanted the design to feel modern, architectural, quiet, and editorial rather than looking like a typical ecommerce site. I discussed ideas such as Scandinavian minimalism, modern European interiors, luxury typography, and soft neutral tones with AI to shape the direction of the website.
  
 Figure 1. AI discussion and website iteration process.
- 
+ ! (Coding Process1.png)
 Figure 2. AI discussion and website iteration process.
 2. Navigation & Interaction Design
 One of the biggest challenges was building the navigation system. The website includes dropdown menus for Product, Brand, and Reference sections. While testing the website, I noticed problems such as menus disappearing too quickly or navigation items breaking on internal pages. Through debugging and discussion with AI, I learned more about hover interactions, page states, and how JavaScript controls dynamic behavior.
